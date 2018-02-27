@@ -17,3 +17,20 @@ body {
   margin: 40px auto 0 auto;
   opacity: 0.45;
 }
+/*Responsive web design*/
+@media (max-width: 750px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% auto auto 10%;
+    justify-content: center;
+  }
+  .header {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  .header__logo {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
