@@ -1,3 +1,6 @@
+* {
+  font-family: 'Titillium Web', sans-serif;
+}
 body {
   background-image: url("images/background.png");
   background-repeat: no-repeat;
@@ -21,6 +24,13 @@ body {
   grid-column: 2/3;
   grid-row: 2;
   justify-self: center;
+}
+.register-form__header {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #1d1d1d;
+  font-size: 30px;
+  font-weight: 300;
 }
 /*Responsive web design*/
 @media (max-width: 750px) {
