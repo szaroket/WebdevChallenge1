@@ -17,6 +17,11 @@ body {
   margin: 40px auto 0 auto;
   opacity: 0.45;
 }
+.column-left {
+  grid-column: 2/3;
+  grid-row: 2;
+  justify-self: center;
+}
 /*Responsive web design*/
 @media (max-width: 750px) {
   .container {
