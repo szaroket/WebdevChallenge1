@@ -31,6 +31,10 @@
         <form method="post" class="form" name="send-email">
           <input type="text" class="form__username" name="name" placeholder="Your Name" required />
           <input type="email" class="form__email" name="email" placeholder="Your Email" required />
+          <textarea cols="30" rows="8" placeholder="Type your message..." required></textarea>
+          <input type="checkbox" id="email-form__checkbox" value="accept" required />
+          <label for="email-form__checkbox"><p>Send a copy to my Email</p></label>
+          <button type="submit" name="register-submit">Send mail</button>
         </form>
       </div>
     </div>

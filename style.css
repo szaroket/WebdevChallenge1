@@ -45,7 +45,7 @@ body {
   width: 400px;
   padding: 15px;
 }
-input {
+input, textarea {
   display: block;
   border: 1px solid #dedede;
   border-radius: 2px;
@@ -54,7 +54,11 @@ input {
   width: 76%;
   background-image: linear-gradient(to bottom, #f6f6f6, #f2f2f2);
 }
-input::placeholder {
+textarea {
+  width: 93%;
+  resize: none;
+}
+input::placeholder, textarea::placeholder {
   font-size: 16px;
   color: #afafaf;
 }
