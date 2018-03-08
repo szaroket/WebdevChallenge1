@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Weekly WebDev Challenge 1</title>
 </head>
@@ -19,9 +20,9 @@
           <input type="password" name="password" placeholder="Password" required />
           <input type="password" name="confirm-password" placeholder="Confirm Password" required />
           <input type="email" name="email" placeholder="Email" required />
-          <input type="text" name="location" placeholder="Your Location" />
-          <input type="checkbox" value="accept" required />
-            <p>I have read and accept the terms of use</p>
+          <input type="text" name="location" placeholder="Your Location" required />
+          <input type="checkbox" id="register-form__checkbox" value="accept" required />
+          <label for="register-form__checkbox"><p>I have read and accept the terms of use</p></label>
           <button type="submit" name="register-submit">Sign up</button>
         </form>
       </div>
