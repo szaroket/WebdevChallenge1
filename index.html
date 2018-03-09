@@ -44,9 +44,11 @@
         <form method="post" class="form" name="sign-in-form">
           <input type="text" class="form__username" name="username" placeholder="Username" required />
           <input type="password" class="form__password" name="password" placeholder="Password" required />
-          <input type="checkbox" id="sign-in__checkbox" value="accept" />
-          <label for="sign-in__checkbox"><p>Remember me</p></label>
-          <button type="submit" name="sign-in-submit">Sign in</button>
+          <div class="form-btns">
+            <input class="form-left" type="checkbox" id="sign-in__checkbox" value="remember" />
+            <label class="form-left" for="sign-in__checkbox">Remember me</label>
+            <button class="form-right" type="submit" name="sign-in-submit">Sign in</button>
+          </div>
         </form>
       </div>
       <h2 class="form__header">Recover Form</h2>
@@ -54,16 +56,20 @@
         <form method="post" class="form" name="recover-form">
           <input type="email" class="form__email" name="email" placeholder="Enter your Email" required />
           <input type="phone" class="form__phone" name="phone" placeholder="Enter your Phone number" required />
-          <button type="submit" name="recover-form-submit">Send</button>
-          <button type="done" name="recover-form-done">Done</button>
+          <div class="form-btns">
+            <button class="form-left" type="submit" name="recover-form-submit">Send</button>
+            <button class="form-right" type="done" name="recover-form-done">Done</button>
+          </div>
         </form>
       </div>
       <h2 class="form__header">Subscribe Form</h2>
       <div class="form-border">
         <form method="post" class="form" name="subscribe-form">
           <input type="email" class="form__email" name="email" placeholder="Enter your Email" required />
-          <button type="submit" name="recover-form-submit">Subscribe</button>
-          <button type="submit-warning" name="recover-form-submit-warning">No, thanks</button>
+          <div class="form-btns">
+            <button class="form-left" type="submit" name="recover-form-submit">Subscribe</button>
+            <button class="form-right" type="submit-warning" name="recover-form-submit-warning">No, thanks</button>
+          </div>
         </form>
       </div>
     </div>
