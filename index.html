@@ -38,6 +38,35 @@
         </form>
       </div>
     </div>
+    <div class="column-right">
+      <h2 class="form__header">Sing In Form</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="sign-in-form">
+          <input type="text" class="form__username" name="username" placeholder="Username" required />
+          <input type="password" class="form__password" name="password" placeholder="Password" required />
+          <input type="checkbox" id="sign-in__checkbox" value="accept" />
+          <label for="sign-in__checkbox"><p>Remember me</p></label>
+          <button type="submit" name="sign-in-submit">Sign in</button>
+        </form>
+      </div>
+      <h2 class="form__header">Recover Form</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="recover-form">
+          <input type="email" class="form__email" name="email" placeholder="Enter your Email" required />
+          <input type="phone" class="form__phone" name="phone" placeholder="Enter your Phone number" required />
+          <button type="submit" name="recover-form-submit">Send</button>
+          <button type="done" name="recover-form-done">Done</button>
+        </form>
+      </div>
+      <h2 class="form__header">Subscribe Form</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="subscribe-form">
+          <input type="email" class="form__email" name="email" placeholder="Enter your Email" required />
+          <button type="submit" name="recover-form-submit">Subscribe</button>
+          <button type="submit-warning" name="recover-form-submit-warning">No, thanks</button>
+        </form>
+      </div>
+    </div>
   </div>
 </body>
 </html>

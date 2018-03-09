@@ -26,6 +26,11 @@ body {
   grid-row: 2;
   justify-self: center;
 }
+.column-right {
+  grid-column: 4/5;
+  grid-row: 2;
+  justify-self: center;
+}
 .form__header {
   text-align: center;
   color: white;
