@@ -113,15 +113,19 @@ button:hover {
   padding-left: 80px;
 }
 .form__password {
-  background: url("images/password.png") no-repeat 20px 11px, url("images/pipeline.png") no-repeat 60px 8px;
+  background: url("images/password.png") no-repeat 20px 9px, url("images/pipeline.png") no-repeat 60px 8px;
   padding-left: 80px;
 }
 .form__email {
-  background: url("images/mail.png") no-repeat 18px 17px, url("images/pipeline.png") no-repeat 60px 8px;
+  background: url("images/mail.png") no-repeat 18px 14px, url("images/pipeline.png") no-repeat 60px 8px;
   padding-left: 80px;
 }
 .form__location {
-  background: url("images/location.png") no-repeat 24px 12px, url("images/pipeline.png") no-repeat 60px 8px;
+  background: url("images/location.png") no-repeat 24px 10px, url("images/pipeline.png") no-repeat 60px 8px;
+  padding-left: 80px;
+}
+.form__phone {
+  background: url("images/phone.png") no-repeat 22px 9px, url("images/pipeline.png") no-repeat 60px 8px;
   padding-left: 80px;
 }
 /*Responsive web design*/
