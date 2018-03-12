@@ -190,12 +190,35 @@ p {
     grid-row: 3/4;
   }
   .footer {
-      grid-column: 1/5;
-      grid-row: 4/5;
-      justify-self: center;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    justify-self: center;
   }
   .logo-footer {
     margin: 60px auto;
-    width: 95%;
+    width: 65%;
+  }
+}
+@media (max-width: 600px) {
+  .column-left, .column-right {
+    width: 330px;
+  }
+  .form-header {
+    width: 330px;
+    margin: 18px auto;
+  }
+  .form-border {
+    width: 330px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .footer {
+    width: 330px;
+  }
+  .logo-footer {
+    margin-left: 10px;
   }
 }
