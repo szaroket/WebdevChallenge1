@@ -194,16 +194,16 @@ p {
     grid-row: 4/5;
     justify-self: center;
   }
-  .logo-footer {
+  .footer__logo {
     margin: 60px auto;
-    width: 65%;
+    width: 95%;
   }
 }
 @media (max-width: 600px) {
   .column-left, .column-right {
     width: 330px;
   }
-  .form-header {
+  .header__logo {
     width: 330px;
     margin: 18px auto;
   }
@@ -217,8 +217,5 @@ p {
   }
   .footer {
     width: 330px;
-  }
-  .logo-footer {
-    margin-left: 10px;
   }
 }
