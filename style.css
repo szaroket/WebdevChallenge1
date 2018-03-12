@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  -moz-box-sizing: border-box; /* ff2 */
+  -ms-box-sizing: border-box; /* ie8 */
+  -webkit-box-sizing: border-box; /* safari3 */
+  -khtml-box-sizing: border-box; /* konqueror */
+  font-family: 'Titillium Web', sans-serif;
+  color: #afafaf;
+}
+body {
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5% 1fr 1fr;
+  grid-template-rows: 15% auto;
+}
+.header {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  justify-self: center;
+}
+.header__logo {
+  margin: 40px auto 0 auto;
+  opacity: 0.35;
+}
+.column-left {
+  grid-column: 2/3;
+  grid-row: 2;
+  justify-self: center;
+}
+.column-right {
+  grid-column: 4/5;
+  grid-row: 2;
+  justify-self: center;
+}
+.form__header {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #1d1d1d;
+  font-size: 32px;
+  font-weight: 100;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.form-border {
+  background-color: rgba(0,0,0,0.25);
+  padding: 15px;
+  border-radius: 3px;
+  width: 430px;
+}
+.form {
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  width: 400px;
+  padding: 15px;
+}
+input, textarea {
+  display: block;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  padding: 12px;
+  margin: 10px 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #f6f6f6, #f2f2f2);
+}
+textarea {
+  resize: none;
+}
+input::placeholder, textarea::placeholder {
+  font-size: 16px;
+  color: #afafaf;
+}
+input[type=checkbox] {
+  display: inline;
+  float: left;
+  margin: 5px 15px 5px 0px;
+  width: 23px;
+  height: 23px;
+  background: #f4f4f4;
+  border: 1px solid #c6c6c6;
+  border-radius: 2px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input[type=checkbox]:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}
+input[type=checkbox]:checked {
+  background: url("images/checked.png") no-repeat 4px 4px;
+}
+label {
+  cursor: pointer;
+  margin-top: 10px;
+}
+input:first-child {
+  margin-top: 6px;
+}
+button {
+  display: block;
+  width: 100%;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #a2d73e, #80c41f);
+  padding: 10px;
+  border: 1px solid #3b9a00;
+  border-radius: 3px;
+  font-size: 18px;
+  text-shadow: 1px 1px 4px #1d1d1d;
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(to bottom, #84c722, #5e8d18);
+  border: 1px solid #678e1e;
+}
+.form-btns {
+  width: 100%;
+  overflow: hidden;
+}
+.form-left {
+  width: 43%;
+  float: left;
+}
+.form-right {
+  width: 43%;
+  float: right;
+}
+.form__username {
+  background: url("images/user.png") no-repeat 18px 12px, url("images/pipeline.png") no-repeat 60px 8px;
+  padding-left: 80px;
+}
+.form__password {
+  background: url("images/password.png") no-repeat 20px 9px, url("images/pipeline.png") no-repeat 60px 8px;
+  padding-left: 80px;
+}
+.form__email {
+  background: url("images/mail.png") no-repeat 18px 14px, url("images/pipeline.png") no-repeat 60px 8px;
+  padding-left: 80px;
+}
+.form__location {
+  background: url("images/location.png") no-repeat 24px 10px, url("images/pipeline.png") no-repeat 60px 8px;
+  padding-left: 80px;
+}
+.form__phone {
+  background: url("images/phone.png") no-repeat 22px 9px, url("images/pipeline.png") no-repeat 60px 8px;
+  padding-left: 80px;
+}
+.disabled, .disabled:hover {
+  background-image: linear-gradient(to bottom, #c6e0a6, #acd184);
+  cursor: not-allowed;
+}
+.warning {
+  background-image: linear-gradient(to bottom, #f55c6d, #f03747);
+  border: 1px solid #a2202a;
+}
+.warning:hover {
+    background-image: linear-gradient(to bottom, #f33c50, #be0c1f);
+    border: 1px solid #8e0917;
+}
+.footer__logo {
+  margin: 60px 40px 50px 45px;
+  opacity: 0.2;
+}
+p {
+  margin-top: 18px;
+}
+/*Responsive web design*/
+@media (max-width: 980px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% auto auto 10%;
+    justify-content: center;
+  }
+  .header {
+    grid-column: 1/5;
+    grid-row: 1/2;
+  }
+  .header__logo {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .column-left {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  .column-right{
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+  .footer {
+      grid-column: 1/5;
+      grid-row: 4/5;
+      justify-self: center;
+  }
+  .logo-footer {
+    margin: 60px auto;
+    width: 95%;
+  }
+}

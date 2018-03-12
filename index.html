@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weekly WebDev Challenge 1</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img class="header__logo" src="images/logo.png">
+    </div>
+    <div class="column-left">
+      <h2 class="form__header">Register Form</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="register-form">
+          <input type="text" class="form__username" name="username" placeholder="Username" required />
+          <input type="password" class="form__password" name="password" placeholder="Password" required />
+          <input type="password" class="form__password" name="confirm-password" placeholder="Confirm Password" required />
+          <input type="email" class="form__email" name="email" placeholder="Email" required />
+          <input type="text" class="form__location" name="location" placeholder="Your Location" required />
+          <input type="checkbox" id="register-form__checkbox" value="accept" required />
+          <label for="register-form__checkbox"><p>I have read and accept the terms of use</p></label>
+          <button type="submit" name="register-submit">Sign up</button>
+        </form>
+      </div>
+      <h2 class="form__header">Send Email</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="send-email">
+          <input type="text" class="form__username" name="name" placeholder="Your Name" required />
+          <input type="email" class="form__email" name="email" placeholder="Your Email" required />
+          <textarea cols="30" rows="8" placeholder="Type your message..." required></textarea>
+          <input type="checkbox" id="email-form__checkbox" value="accept" required />
+          <label for="email-form__checkbox"><p>Send a copy to my Email</p></label>
+          <button type="submit" name="register-submit">Send mail</button>
+        </form>
+      </div>
+    </div>
+    <div class="column-right">
+      <h2 class="form__header">Sing In Form</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="sign-in-form">
+          <input type="text" class="form__username" name="username" placeholder="Username" required />
+          <input type="password" class="form__password" name="password" placeholder="Password" required />
+          <div class="form-btns">
+            <input class="form-left" type="checkbox" id="sign-in__checkbox" value="remember" />
+            <label class="form-left" for="sign-in__checkbox">Remember me</label>
+            <button class="form-right" type="submit" name="sign-in-submit">Sign in</button>
+          </div>
+        </form>
+      </div>
+      <h2 class="form__header">Recover Form</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="recover-form">
+          <input type="email" class="form__email" name="email" placeholder="Enter your Email" required />
+          <input type="phone" class="form__phone" name="phone" placeholder="Enter your Phone number" required />
+          <div class="form-btns">
+            <button class="form-left" type="submit" name="recover-form-submit">Send</button>
+            <button class="form-right disabled" type="done" name="recover-form-done" disabled>Done</button>
+          </div>
+        </form>
+      </div>
+      <h2 class="form__header">Subscribe Form</h2>
+      <div class="form-border">
+        <form method="post" class="form" name="subscribe-form">
+          <input type="email" class="form__email" name="email" placeholder="Enter your Email" required />
+          <div class="form-btns">
+            <button class="form-left" type="submit" name="recover-form-submit">Subscribe</button>
+            <button class="form-right warning" type="submit-warning" name="recover-form-submit-warning">No, thanks</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer">
+        <img class="footer__logo" src="images/logo-footer.png">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
