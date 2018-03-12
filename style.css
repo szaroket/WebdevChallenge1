@@ -1,4 +1,9 @@
 * {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  -moz-box-sizing: border-box; /* ff2 */
+  -ms-box-sizing: border-box; /* ie8 */
+  -webkit-box-sizing: border-box; /* safari3 */
+  -khtml-box-sizing: border-box; /* konqueror */
   font-family: 'Titillium Web', sans-serif;
   color: #afafaf;
 }
@@ -19,7 +24,7 @@ body {
 }
 .header__logo {
   margin: 40px auto 0 auto;
-  opacity: 0.45;
+  opacity: 0.35;
 }
 .column-left {
   grid-column: 2/3;
@@ -37,6 +42,8 @@ body {
   text-shadow: 2px 2px 4px #1d1d1d;
   font-size: 32px;
   font-weight: 100;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 .form-border {
   background-color: rgba(0,0,0,0.25);
@@ -56,11 +63,10 @@ input, textarea {
   border-radius: 2px;
   padding: 12px;
   margin: 10px 0;
-  width: 76%;
+  width: 100%;
   background-image: linear-gradient(to bottom, #f6f6f6, #f2f2f2);
 }
 textarea {
-  width: 93%;
   resize: none;
 }
 input::placeholder, textarea::placeholder {
@@ -140,6 +146,22 @@ button:hover {
   background: url("images/phone.png") no-repeat 22px 9px, url("images/pipeline.png") no-repeat 60px 8px;
   padding-left: 80px;
 }
+.disabled, .disabled:hover {
+  background-image: linear-gradient(to bottom, #c6e0a6, #acd184);
+  cursor: not-allowed;
+}
+.warning {
+  background-image: linear-gradient(to bottom, #f55c6d, #f03747);
+  border: 1px solid #a2202a;
+}
+.warning:hover {
+    background-image: linear-gradient(to bottom, #f33c50, #be0c1f);
+    border: 1px solid #8e0917;
+}
+.footer__logo {
+  margin: 60px 40px 50px 45px;
+  opacity: 0.2;
+}
 p {
   margin-top: 18px;
 }
@@ -160,11 +182,20 @@ p {
     margin: 20px auto;
   }
   .column-left {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+  .column-right{
+    grid-column: 1/5;
+    grid-row: 3/4;
+  }
+  .footer {
       grid-column: 1/5;
-      grid-row: 2/3;
-    }
-    .column-right{
-      grid-column: 1/5;
-      grid-row: 3/4;
-    }
+      grid-row: 4/5;
+      justify-self: center;
+  }
+  .logo-footer {
+    margin: 60px auto;
+    width: 95%;
+  }
 }
